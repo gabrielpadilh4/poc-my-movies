@@ -1,9 +1,10 @@
+import { MoviesListContainer } from "../styles/MoviesListContainer";
 import { MovieItem } from "./MovieItem";
 
 export const MoviesList = ({ movies }) => (
-    <section>
+    <MoviesListContainer>
         <ul>
             {movies.map(movie => <MovieItem title={movie.title} />)}
         </ul>
-    </section>
+    </MoviesListContainer>
 )
