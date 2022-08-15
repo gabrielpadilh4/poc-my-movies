@@ -1,7 +1,9 @@
+import { AboutContainer } from '../styles/AboutContainer';
+
 export const About = () => {
     return (
-        <div>
+        <AboutContainer>
             Página sobre
-        </div>
+        </AboutContainer>
     )
 }

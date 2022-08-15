@@ -9,6 +9,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { AboutView } from "./views/AboutView";
+import { MovieDetailView } from "./views/MovieDetailView";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -17,6 +18,7 @@ root.render(
     <Routes>
       <Route path="/" element={<App />} />
       <Route path="/about" element={<AboutView />} />
+      <Route path="/movie/:id" element={<MovieDetailView />} />
     </Routes>
   </BrowserRouter>
 );
